@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Has Corbyn fucked off yet?</title>
+  <style type="text/css">
+    body,
+    html {
+      background-color: #e4013b;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      height: 100vh;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      overflow: hidden;
+    }
+
+    h1 {
+      font-size: 16px;
+      margin: 0 100px;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 64px;
+      margin: 30px 100px;
+      text-align: center;
+    }
+
+    p {
+      margin: 0 100px;
+      text-align: center;
+    }
+
+    #twat {
+      position: fixed;
+      bottom: 0;
+      width: 365px;
+      height: 250px;
+      background-image: url('twat.png');
+      background-size: cover;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Has Corbyn fucked off yet?</h1>
+  <h2 id="answer"></h2>
+  <p id="message"></p>
+  <div id="twat"></div>
+
+  <script type="text/javascript">
+    const answers = [
+      "Has he bollocks",
+      "No",
+      "Nope",
+      "Narp",
+      "Of course he fucking hasn't",
+    ]
+    const messages = [
+      "He's still there, acting like everything's hunky Tory.",
+      "The man can't even quit right.",
+      "What's the rush? The Tories have the U.K. stiched up for a decade at least now.",
+      "Some bollocks about a transition apparently.",
+      "Fuck knows what he's doing.",
+    ]
+
+    document.getElementById('answer').innerHTML = answers[Math.floor(Math.random() * answers.length)];
+    document.getElementById('message').innerHTML = messages[Math.floor(Math.random() * messages.length)];
+  </script>
+</body>
+
+</html>
