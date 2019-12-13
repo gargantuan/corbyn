@@ -39,14 +39,18 @@
       text-align: center;
     }
 
+    #twat {
+      position: fixed;
+      bottom: -100px;
+      width: 365px;
+      height: 250px;
+      background-image: url('twat.png');
+      background-size: cover;
+    }
+
     @media (min-width: 600px) {
       #twat {
-        position: fixed;
         bottom: 0;
-        width: 365px;
-        height: 250px;
-        background-image: url('twat.png');
-        background-size: cover;
       }
     }
   </style>
@@ -73,6 +77,8 @@
       "What's the rush? The Tories have the U.K. stiched up for a decade at least now.",
       "Some bollocks about a transition apparently.",
       "Fuck knows what he's doing.",
+      "It’s obvious from the election that it the British public want him to get on with brexit.",
+      "He wants to remain neutral on the issue of quitting.",
     ]
 
     document.getElementById('answer').innerHTML = answers[Math.floor(Math.random() * answers.length)];
